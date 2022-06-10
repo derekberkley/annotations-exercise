@@ -28,8 +28,11 @@ public class Author extends Person {
         books.add(book);
     }
 
+    //TODO: Fix the error without using the annotation @SuppressWarnings.
+
+    // changed method name to full name so super works from Person
     @Override
-    public String sortName() {
+    public String fullName() {
         return String.format("%s, %s", lastName, firstName);
     }
 }
